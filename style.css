@@ -1,0 +1,1094 @@
+/**
+ * Theme Name:  Hybrid Base
+ * Theme URI:   http://www.dopethemes.com
+ * Description: A custom DopeThemes starter theme.
+ * Version:     1.0.0
+ * Author:      Patrick Villanueva
+ * Author URI:  http://www.dopethemes.com
+ * Tags:        one-column, two-columns, custom-background, custom-header, custom-menu, featured-images, left-sidebar, post-formats, responsive-layout, right-sidebar, rtl-language-support, threaded-comments, translation-ready
+ * Text Domain: hybrid-base
+ * License:     GNU General Public License v2.0 or laterW
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+/* ===========================================================================
+ *  Normalize
+ * =========================================================================== */
+
+/**
+ * Version 3.0.2 | MIT License | git.io/normalize
+ * --------------------------------------------------------------------------- */
+
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2rem;margin:.67rem 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1rem 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35rem .625rem .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+/* ===========================================================================
+ *  Fonts
+ * =========================================================================== */
+
+/* ===========================================================================
+ *  Defaults
+ * =========================================================================== */
+
+/**
+ * HTML
+ * --------------------------------------------------------------------------- */
+
+html {
+  font-size: 14px;
+}
+
+/**
+ * Body
+ * --------------------------------------------------------------------------- */
+
+body {
+  color: #222;
+  line-height: 1.4;
+}
+
+/**
+ * Box sizing
+ * --------------------------------------------------------------------------- */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/**
+ * Selector
+ * --------------------------------------------------------------------------- */
+
+:focus {
+  outline: none;
+}
+
+/**
+ * Selection
+ * --------------------------------------------------------------------------- */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/**
+ * Horizontal rule
+ * --------------------------------------------------------------------------- */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+/**
+ * Links
+ * --------------------------------------------------------------------------- */
+
+a {}
+
+a:hover {}
+
+/**
+ * Headings
+ * --------------------------------------------------------------------------- */
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+/**
+ * Blockquotes
+ * --------------------------------------------------------------------------- */
+
+blockquote {}
+
+blockquote blockquote {}
+
+blockquote cite {}
+
+/**
+ * Acronym and abbreviation
+ * --------------------------------------------------------------------------- */
+
+acronym {}
+
+abbr {}
+
+/**
+ * Code and preformatted text
+ * --------------------------------------------------------------------------- */
+
+code {}
+
+pre {}
+
+pre code {}
+
+/**
+ * Address
+ * --------------------------------------------------------------------------- */
+
+address {}
+
+/**
+ * Lists
+ * --------------------------------------------------------------------------- */
+
+ul {
+  padding-left: 3rem;
+}
+
+ul li {}
+
+ol {
+  padding-left: 3rem;
+}
+
+ol li {}
+
+dl {}
+
+dt {}
+
+dd {}
+
+/**
+ * Tables
+ * --------------------------------------------------------------------------- */
+
+table {}
+
+caption {}
+
+thead {}
+
+tfoot {}
+
+tbody {}
+
+tr {}
+
+th {}
+
+td {}
+
+/**
+ * Embeds
+ * --------------------------------------------------------------------------- */
+
+audio,
+canvas,
+iframe,
+svg,
+video {
+  vertical-align: middle;
+}
+
+object {}
+
+embed {}
+
+iframe {}
+
+video {}
+
+/**
+ * Forms
+ * --------------------------------------------------------------------------- */
+
+form {}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset legend {}
+
+label {}
+
+input {}
+
+input[type="radio"] {}
+
+input[type="checkbox"] {}
+
+input[type="email"] {}
+
+input[type="password"] {}
+
+input[type="search"] {}
+
+input[type="text"] {}
+
+input[type="url"] {}
+
+input[type="tel"] {}
+
+input[type="number"] {}
+
+textarea {
+  resize: vertical;
+}
+
+select {}
+
+select optgroup {}
+
+select option {}
+
+button {}
+
+input[type="button"] {}
+
+input[type="reset"] {}
+
+input[type="submit"] {}
+
+/**
+ * WordPress alignments
+ * --------------------------------------------------------------------------- */
+
+.alignnone {
+  margin: 0.313rem 1.250rem 1.250rem 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 0.313rem auto 0.313rem auto;
+}
+
+.alignright {
+  float: right;
+  margin: 0.313rem 0 1.250rem 1.250rem;
+}
+
+.alignleft {
+  float: left;
+  margin: 0.313rem 1.250rem 1.250rem 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 0.313rem 0 1.250rem 1.250rem;
+}
+
+a img.alignnone {
+  margin: 0.313rem 1.250rem 1.250rem 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 0.313rem 1.250rem 1.250rem 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+/**
+ * Images
+ * --------------------------------------------------------------------------- */
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+a img {
+  display: block;
+}
+
+/**
+ * WordPress editor images
+ * --------------------------------------------------------------------------- */
+
+img.size-thumbnail {}
+
+img.size-medium {}
+
+img.size-large {}
+
+img.size-full {}
+
+/**
+ * Thumbnails
+ * --------------------------------------------------------------------------- */
+
+.thumbnail {}
+
+/**
+ * Captions
+ * --------------------------------------------------------------------------- */
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  padding: 0.313rem 0.188rem 0.625rem;
+  text-align: center;
+}
+
+.wp-caption.alignnone {
+  margin: 0.313rem 1.250rem 1.250rem 0;
+}
+
+.wp-caption.alignleft {
+  margin: 0.313rem 1.250rem 1.250rem 0;
+}
+
+.wp-caption.alignright {
+  margin: 0.313rem 0 1.250rem 1.250rem;
+}
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+  font-size: 0.688rem;
+  line-height: 1.063rem;
+  margin: 0;
+  padding: 0 0.250rem 0.313rem;
+}
+
+.wp-caption-text a {}
+
+.wp-caption-text a:hover {}
+
+/**
+ * Galleries
+ * --------------------------------------------------------------------------- */
+
+.gallery {}
+
+.gallery .gallery-item {}
+
+.gallery-icon {}
+
+.gallery .gallery-icon img {}
+
+.gallery .gallery-caption {}
+
+/**
+ * Avatars
+ * --------------------------------------------------------------------------- */
+
+.avatar {}
+
+a .avatar {}
+
+a:hover .avatar {}
+
+/* ===========================================================================
+ *  Layout
+ * =========================================================================== */
+
+#container {}
+
+.layout-1c #container {}
+
+.layout-2c-l #container {}
+
+.layout-2c-r #container {}
+
+.layout-3c-l #container {}
+
+.layout-3c-r #container {}
+
+.layout-3c-c #container {}
+
+#header {}
+
+#menu-primary {}
+
+#menu-secondary {}
+
+#main {}
+
+#content {}
+
+#sidebar-primary {}
+
+#menu-subsidiary {}
+
+#sidebar-subsidiary {}
+
+#footer {}
+
+/* ===========================================================================
+ *  Header
+ * =========================================================================== */
+
+#header {}
+
+#branding {}
+
+#site-title {}
+
+#site-title a {}
+
+#site-title a:hover {}
+
+#site-description {}
+
+/* ===========================================================================
+ *  Menus
+ * =========================================================================== */
+
+.menu-toggle {
+  display: none;
+}
+
+/**
+ * Primary menu
+ * --------------------------------------------------------------------------- */
+
+#menu-primary {}
+
+#menu-primary .wrap {}
+
+#menu-primary ul {}
+
+#menu-primary ul ul {}
+
+#menu-primary li {}
+
+#menu-primary li.current-menu-item {}
+
+#menu-primary li a {}
+
+#menu-primary li a:hover {}
+
+/**
+ * Secondary menu
+ * --------------------------------------------------------------------------- */
+
+#menu-secondary {}
+
+#menu-secondary .wrap {}
+
+#menu-secondary ul {}
+
+#menu-secondary ul ul {}
+
+#menu-secondary li {}
+
+#menu-secondary li.current-menu-item {}
+
+#menu-secondary li a {}
+
+#menu-secondary li a:hover {}
+
+/**
+ * Subsidiary menu
+ * --------------------------------------------------------------------------- */
+
+#menu-subsidiary {}
+
+#menu-subsidiary .wrap {}
+
+#menu-subsidiary ul {}
+
+#menu-subsidiary li {}
+
+#menu-subsidiary li.current-menu-item {}
+
+#menu-subsidiary li a {}
+
+#menu-subsidiary li a:hover {}
+
+/* ===========================================================================
+ *  Content
+ * =========================================================================== */
+
+/**
+ * Breadcrumbs
+ * --------------------------------------------------------------------------- */
+
+.breadcrumb-trail {}
+
+.breadcrumb-trail .trail-begin {}
+
+.breadcrumb-trail .trail-end {}
+
+.breadcrumb-trail .sep {}
+
+.breadcrumb-trail a {}
+
+.breadcrumb-trail a:hover {}
+
+/**
+ * Posts
+ * --------------------------------------------------------------------------- */
+
+.hentry {}
+
+.sticky {}
+
+/**
+ * Header
+ * --------------------------------------------------------------------------- */
+
+.entry-header {}
+
+.entry-title {}
+
+.entry-title a {}
+
+.entry-title a:hover {}
+
+.entry-byline {}
+
+.entry-byline a {}
+
+.entry-byline a:hover {}
+
+.entry-byline .published {}
+
+/**
+ * Content
+ * --------------------------------------------------------------------------- */
+
+.entry-content {}
+
+/**
+ * Summary
+ * --------------------------------------------------------------------------- */
+
+.entry-summary {}
+
+/**
+ * Footer
+ * --------------------------------------------------------------------------- */
+
+.entry-footer {}
+
+.entry-meta {}
+
+.entry-meta a {}
+
+.entry-meta a:hover {}
+
+.entry-meta .published {}
+
+.entry-meta .category {}
+
+.entry-meta .post_tag {}
+
+/**
+ * Post format - Aside
+ * --------------------------------------------------------------------------- */
+
+.format-aside {}
+
+.format-aside .entry-content a.permalink {}
+
+/**
+ * Post format - Chat
+ * --------------------------------------------------------------------------- */
+
+.format-chat {}
+
+.format-chat .chat-row {}
+
+.format-chat .chat-text {}
+
+.format-chat cite {}
+
+.format-chat .chat-speaker-1 {}
+
+.format-chat .chat-speaker-2 {}
+
+.format-chat .chat-speaker-3 {}
+
+.format-chat .chat-speaker-4 {}
+
+.format-chat .chat-speaker-5 {}
+
+.format-chat .chat-speaker-6 {}
+
+.format-chat .chat-speaker-7 {}
+
+.format-chat .chat-speaker-8 {}
+
+.format-chat .chat-speaker-9 {}
+
+/**
+ * Post format - Link
+ * --------------------------------------------------------------------------- */
+
+.format-link {}
+
+.format-link .entry-title {}
+
+.format-link .entry-title a {}
+
+.format-link .entry-title a:hover {}
+
+.format-link .entry-title a .meta-nav {}
+
+/**
+ * Post format - Gallery
+ * --------------------------------------------------------------------------- */
+
+.format-gallery {}
+
+.format-gallery .image-count {}
+
+/**
+ * Post format - Quote
+ * --------------------------------------------------------------------------- */
+
+.format-quote {}
+
+.format-quote blockquote {}
+
+.format-quote blockquote cite {}
+
+/**
+ * Post format - Status
+ * --------------------------------------------------------------------------- */
+
+.format-status
+
+.format-status .avatar {}
+
+/**
+ * Post format - Video
+ * --------------------------------------------------------------------------- */
+
+.format-video {}
+
+/**
+ * Post format - Audio
+ * --------------------------------------------------------------------------- */
+
+.format-audio {}
+
+/**
+ * Attachment meta
+ * --------------------------------------------------------------------------- */
+
+.attachment-meta {}
+
+.attachment-meta .image-gallery {}
+
+.attachment-meta .image-info {}
+
+.image-info ul {}
+
+.image-info ul li {}
+
+.image-info .prep {}
+
+.image-info .image-data {}
+
+/**
+ * Loop meta
+ * --------------------------------------------------------------------------- */
+
+.loop-meta {}
+
+.loop-title {}
+
+.loop-description {}
+
+/**
+ * Single posts using <!--nextpage-->
+ * --------------------------------------------------------------------------- */
+
+.page-links {}
+
+.page-links .before {}
+
+.page-links a {}
+
+.page-links a:hover {}
+
+/**
+ * Single post navigation (between different posts)
+ * --------------------------------------------------------------------------- */
+
+.loop-nav {}
+
+.loop-nav a {}
+
+.loop-nav a:hover {}
+
+.loop-nav a[rel="prev"] {}
+
+.loop-nav a[rel="next"] {}
+
+/**
+ * Archive-type pages
+ * --------------------------------------------------------------------------- */
+
+.loop-pagination {}
+
+.loop-pagination .page-numbers {}
+
+.loop-pagination a.page-numbers {}
+
+.loop-pagination a.page-numbers:hover {}
+
+.page-numbers.current {}
+
+/**
+ * Comments pagination
+ * --------------------------------------------------------------------------- */
+
+.comments-nav {}
+
+.comments-nav a {}
+
+.comments-nav a:hover {}
+
+.comments-nav .page-numbers {}
+
+/* ===========================================================================
+ *  Sidebars and Widgets
+ * =========================================================================== */
+
+/**
+ * Sidebars
+ * --------------------------------------------------------------------------- */
+
+.sidebar {}
+
+.sidebar .widget {}
+
+.sidebar .widget-title {}
+
+/**
+ * Widgets
+ * --------------------------------------------------------------------------- */
+
+.widget {}
+
+.widget-title {}
+
+/**
+ * Specific
+ * --------------------------------------------------------------------------- */
+
+#sidebar-primary {}
+
+#sidebar-subsidiary {}
+
+/* ===========================================================================
+ *  Comments
+ * =========================================================================== */
+
+#comments-template {}
+
+/**
+ * Comments
+ * --------------------------------------------------------------------------- */
+
+#comments {}
+
+#comments-number {}
+
+/**
+ * Comments closed message
+ * --------------------------------------------------------------------------- */
+
+.comments-closed {}
+
+.comments-closed.pings-open {}
+
+/**
+ * Comment list
+ * --------------------------------------------------------------------------- */
+
+ol.comment-list {}
+
+ol.comment-list ol.children {}
+
+/**
+ * Individual comments
+ * --------------------------------------------------------------------------- */
+
+li.comment {}
+
+li.ping {}
+
+li.bypostauthor {}
+
+/**
+ * Avatars
+ * --------------------------------------------------------------------------- */
+
+.comment-list .avatar {}
+
+/**
+ * Meta
+ * --------------------------------------------------------------------------- */
+
+.comment-meta {}
+
+.comment-author {}
+
+.comment-author cite {}
+
+.comment-meta .published {}
+
+/**
+ * Comment text/content
+ * --------------------------------------------------------------------------- */
+
+.comment-content {}
+
+/**
+ * Reply link
+ * --------------------------------------------------------------------------- */
+
+.comment-reply-link {}
+
+.comment-reply-link:hover {}
+
+/**
+ * Respond (comment form)
+ * --------------------------------------------------------------------------- */
+
+#respond {}
+
+#reply-title {}
+
+#reply-title small {}
+
+#respond .log-in-out {}
+
+#respond label {}
+
+#respond label .required {}
+
+#respond input[type="text"] {}
+
+#respond input[type="text"]:focus {}
+
+#respond input[type="url"] {}
+
+#respond input[type="url"]:focus {}
+
+#respond input[type="email"] {}
+
+#respond input[type="email"]:focus {}
+
+#respond input[type="submit"] {}
+
+#respond input[type="submit"]:focus {}
+
+#respond textarea {}
+
+#respond textarea:focus {}
+
+/* ===========================================================================
+ *  Footer
+ * =========================================================================== */
+
+#footer {}
+
+#footer .copyright {}
+
+#footer .credit {}
+
+#footer a {}
+
+#footer a:hover {}
+
+/* ===========================================================================
+ *  Helper classes
+ * =========================================================================== */
+
+/**
+ * Accessibility screen reader button skip link
+ * --------------------------------------------------------------------------- */
+
+a.screen-reader-text {
+  position: fixed;
+  top: -9999rem;
+  left: -9999rem;
+  z-index: 999999;
+  background-color: #f1f1f1;
+  padding: 1.071rem 1.643rem 1rem;
+  -webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+  box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+  color: #21759b;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.screen-reader-text:focus {
+  top: 0.313rem;
+  left: 0.313rem;
+  outline: none;
+}
+
+/**
+ * Hide visually and from screen readers
+ * --------------------------------------------------------------------------- */
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/**
+ * Hide only visually, but have it available for screen readers
+ * --------------------------------------------------------------------------- */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/**
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard
+ * --------------------------------------------------------------------------- */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/**
+ * Hide visually and from screen readers, but maintain layout
+ * --------------------------------------------------------------------------- */
+
+.invisible {
+  visibility: hidden;
+}
+
+/* ===========================================================================
+ *  Clearfix
+ * =========================================================================== */
+
+.clearfix::after {
+  content:    ".";
+  display:    block;
+  height:     0;
+  clear:      both;
+  visibility: hidden;
+}
+
+/* ===========================================================================
+ *  Media Queries
+ * =========================================================================== */
+
+/* ===========================================================================
+ *  Media Print
+ * =========================================================================== */
+
+@media print {
+
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
